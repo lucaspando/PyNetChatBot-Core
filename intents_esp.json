@@ -1,0 +1,40 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["hola", "como estas?", "buenas tardes", "buen dia","buenos dias", "buenas noches", "que onda?", "como andamio?", "que tal?"],
+         "responses": ["Hola", "Hola, como te encuentras?", "Hola, en que puedo ayudarte?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["chau", "adios", "nos vemos", "hasta Luego", "bye bye", "adio", "bye"],
+         "responses": ["Adios, que tenga un buen dia", "Adios, gracias por visitarnos", "Adios, hasta la proxima"],
+         "context_set": ""
+        },
+        {"tag": "thanks",
+         "patterns": ["gracias", "muchas gracias", "graciela", "gracia"],
+         "responses": ["De nada", "Cuando quieras", "Un placer"],
+         "context_set": ""
+        },
+        {"tag": "hours",
+         "patterns": ["que horarios?", "en que horarios atienden?", "horarios de atencion", "hora atencion", "cuando atienden?", "horarios", "horas" ],
+         "responses": ["Atendemos de a 9am-9pm", "Nuestras horario de atencion es de 9am-9pm"],
+         "context_set": ""
+        },
+        {"tag": "contratoOpcion",
+         "patterns": ["contrato", "opciones contrato", "ayuda contrato", "help contrato" ],
+         "responses": ["Las opciones para contratos son: Ver datos o Creacion"],
+         "context_set": "contrato"
+        },
+        {"tag": "contratoDato",
+         "patterns": ["datos contrato", "detalle contrato" ],
+         "responses": ["Datos del contrato..."],
+         "context_filter": "contrato",
+         "context_set": ""
+        },
+        {"tag": "contratoCreacion",
+         "patterns": ["creacion contrato", "crear contrato", "como se crea un contrato", "como creo contrato", "generar contrato", "generacion contrato", "como generar contrato" ],
+         "responses": ["Para crear un contraro debe..."],
+         "context_filter": "contrato",
+         "context_set": ""
+        }
+   ]
+}
